@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Kids Academy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🌟 Smart Kids</div>
+    <div class="points">⭐ <span id="points">0</span> Points</div>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>Welcome to Smart Kids Academy!</h1>
+        <p>Learn something new every day. Play, explore and become smarter!</p>
+        <button onclick="showSubjects()">Start Learning 🚀</button>
+    </div>
+    <div class="hero-icon">🎓</div>
+</section>
+
+<section class="container" id="subjects">
+
+    <h2>📚 Choose Your Subject</h2>
+
+    <div class="grid">
+
+        <div class="card math" onclick="startQuiz('math')">
+            <span>🔢</span>
+            <h3>Mathematics</h3>
+            <p>Numbers, calculations and puzzles.</p>
+            <button>Explore</button>
+        </div>
+
+        <div class="card english" onclick="startQuiz('english')">
+            <span>🔤</span>
+            <h3>English</h3>
+            <p>Spelling, grammar and vocabulary.</p>
+            <button>Explore</button>
+        </div>
+
+        <div class="card science" onclick="startQuiz('science')">
+            <span>🔬</span>
+            <h3>Basic Science</h3>
+            <p>Discover the amazing world around you.</p>
+            <button>Explore</button>
+        </div>
+
+        <div class="card knowledge" onclick="startQuiz('knowledge')">
+            <span>🌍</span>
+            <h3>General Knowledge</h3>
+            <p>Discover countries and interesting facts.</p>
+            <button>Explore</button>
+        </div>
+
+    </div>
+</section>
+
+<section class="quiz-section" id="quiz">
+    <button class="back" onclick="goHome()">← Back</button>
+
+    <h2 id="quizTitle">Quiz Challenge</h2>
+
+    <div class="quiz-box">
+        <p id="questionNumber"></p>
+        <h3 id="question">Your question will appear here.</h3>
+
+        <div id="answers"></div>
+
+        <p id="feedback"></p>
+
+        <button id="nextBtn" onclick="nextQuestion()" hidden>
+            Next Question →
+        </button>
+    </div>
+</section>
+
+<section class="container">
+    <h2>🏆 Your Learning Progress</h2>
+
+    <div class="progress-card">
+        <h3>⭐ Total Points</h3>
+        <h1 id="totalPoints">0</h1>
+        <p>Keep learning to earn more stars!</p>
+    </div>
+</section>
+
+<footer>
+    <h3>🌟 Smart Kids Academy</h3>
+    <p>Learning today, leading tomorrow.</p>
+    <p>© 2026 Smart Kids Academy</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+  </html>
