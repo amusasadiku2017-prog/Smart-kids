@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7ff;
+    color: #252b45;
+}
+
+header {
+    background: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 12px #ddd;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #635bdb;
+}
+
+.points {
+    background: #fff4c2;
+    padding: 12px 18px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.hero {
+    margin: 30px auto;
+    width: 88%;
+    padding: 45px;
+    border-radius: 25px;
+    background: linear-gradient(120deg, #6558df, #a18aff);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 260px;
+}
+
+.hero h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    line-height: 1.7;
+    max-width: 450px;
+}
+
+.hero-icon {
+    font-size: 100px;
+}
+
+button {
+    border: none;
+    background: #ffca4b;
+    color: #252b45;
+    padding: 13px 22px;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.container {
+    width: 88%;
+    margin: 45px auto;
+}
+
+.container h2 {
+    margin-bottom: 25px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.card {
+    padding: 28px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card span {
+    font-size: 45px;
+}
+
+.card h3 {
+    margin: 15px 0;
+}
+
+.card p {
+    line-height: 1.5;
+}
+
+.math {
+    background: #dceaff;
+}
+
+.english {
+    background: #ffe1e8;
+}
+
+.science {
+    background: #d9f7e6;
+}
+
+.knowledge {
+    background: #fff0cc;
+}
+
+.quiz-section {
+    display: none;
+    width: 88%;
+    margin: 40px auto;
+}
+
+.quiz-box {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 15px #ddd;
+}
+
+.quiz-box h3 {
+    margin: 25px 0;
+}
+
+.option {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: #eef0ff;
+    margin: 12px 0;
+}
+
+.option:hover {
+    background: #d9dcff;
+}
+
+.option:disabled {
+    cursor: default;
+    opacity: 1;
+}
+
+.correct {
+    background: #c8f5d7 !important;
+}
+
+.wrong {
+    background: #ffd6d6 !important;
+}
+
+.progress-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.progress-card h1 {
+    color: #6558df;
+    font-size: 45px;
+    margin: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 35px;
+    background: #28284b;
+    color: white;
+    line-height: 2;
+}
+
+@media(max-width:600px) {
+
+    .hero {
+        padding: 25px;
+    }
+
+    .hero h1 {
+        font-size: 25px;
+    }
+
+    .hero-icon {
+        font-size: 50px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+}
